@@ -15,20 +15,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.8.0"
-  analyzer_plugin:
-    dependency: transitive
-    description:
-      name: analyzer_plugin
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.8.0"
-  ansicolor:
-    dependency: transitive
-    description:
-      name: ansicolor
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.1"
   args:
     dependency: transitive
     description:
@@ -79,7 +65,7 @@ packages:
     source: hosted
     version: "2.0.5"
   build_runner:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: build_runner
       url: "https://pub.dartlang.org"
@@ -169,27 +155,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
-  csslib:
-    dependency: transitive
-    description:
-      name: csslib
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.17.1"
-  cupertino_icons:
-    dependency: "direct main"
-    description:
-      name: cupertino_icons
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.4"
-  dart_code_metrics:
-    dependency: "direct dev"
-    description:
-      name: dart_code_metrics
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.8.1"
   dart_style:
     dependency: transitive
     description:
@@ -223,24 +188,10 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_architecture_business:
+  flutter_architecture_model:
     dependency: "direct main"
     description:
-      path: "packages/flutter_architecture_business"
-      relative: true
-    source: path
-    version: "1.0.0+1"
-  flutter_architecture_data:
-    dependency: transitive
-    description:
-      path: "packages/flutter_architecture_data"
-      relative: true
-    source: path
-    version: "1.0.0+1"
-  flutter_architecture_model:
-    dependency: transitive
-    description:
-      path: "packages/flutter_architecture_model"
+      path: "../flutter_architecture_model"
       relative: true
     source: path
     version: "1.0.0+1"
@@ -298,13 +249,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
-  html:
-    dependency: transitive
-    description:
-      name: html
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.15.0"
   http_multi_server:
     dependency: transitive
     description:
@@ -327,7 +271,7 @@ packages:
     source: hosted
     version: "1.5.0"
   injectable_generator:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: injectable_generator
       url: "https://pub.dartlang.org"
@@ -389,13 +333,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.1"
-  nested:
-    dependency: transitive
-    description:
-      name: nested
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
   package_config:
     dependency: transitive
     description:
@@ -417,13 +354,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.0"
-  provider:
-    dependency: "direct main"
-    description:
-      name: provider
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "6.0.1"
   pub_semver:
     dependency: transitive
     description:
@@ -557,4 +487,3 @@ packages:
     version: "3.1.0"
 sdks:
   dart: ">=2.14.0 <3.0.0"
-  flutter: ">=1.16.0"
