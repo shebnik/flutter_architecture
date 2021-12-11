@@ -19,7 +19,7 @@ class DummyUserService implements UserService {
   Future<UserData> getUserById(int id) async {
     await Future.delayed(
       const Duration(
-        seconds: 3,
+        seconds: 1,
       ),
     );
 

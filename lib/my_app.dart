@@ -16,6 +16,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     _mainBloc = GetIt.I.get<MainBloc>();
+    _mainBloc.add(const MainBlocEvent.init());
   }
 
   @override
@@ -40,7 +41,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Demo'),
+        title: const Text('Flutter Demo'),
       ),
       body: StreamBuilder<MainBlocState>(
         stream: context.read<MainBloc>().state,
@@ -59,6 +60,7 @@ class MyHomePage extends StatelessWidget {
                   ),
                 ),
                 floatingActionButton: FloatingActionButton(
+                  child: const Icon(Icons.add),
                   onPressed: () => context.read<MainBloc>().add(
                         MainBlocEvent.setUser(
                           userId: state.userData.id + 1,
